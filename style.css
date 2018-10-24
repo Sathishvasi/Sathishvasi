@@ -41,6 +41,10 @@ span {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.adjust-card-items{
+    padding-top: 8px;
+}
+
 .top {
     padding-top: 15px;
     height: 78px;
