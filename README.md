@@ -1,6 +1,6 @@
 # Vue JS APP
 
-Link for Live Preview: https://sathishvasi.github.io/#/
+Link for Live Preview: https://sathishvasi.github.io/
 
 FUNCTIONALITIES:
 * Used customised Twitter API from herokuapp for data response
@@ -12,8 +12,9 @@ FUNCTIONALITIES:
 
 Technologies Used:
 * vue-cli -> (vue-router, vue-resources)
+* axios package used for API call 
 * vue-router -> Used for page routing
-* vue-resourrce -> Used to get API response from "$http.get()"
+* vue-resource -> Used to get API response from "axios.get('<url>')"
 * vue-init -> Used for component binding
 * Mounted() function used to pass props from one component to another
 * Made one common service "getData.js" to retrieve API data
@@ -31,7 +32,7 @@ My Folder Structure:
 *Folder-> router
      File-> index.js
 *Folder-> services
-     File-> getData.js
+     File-> DataService.vue
 File -> App.vue
 File -> main.js
   
