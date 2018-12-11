@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Twitter</title><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script><link href=/static/css/app.3df7be6499df85cb9e2ac536dfecb9da.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.e9636d9c621c878acf70.js></script><script type=text/javascript src=/static/js/app.c08b693e057054225529.js></script></body><script>window.mincount = 3;
+  window.maxcount = 6;
+
+  $(".card").slice(5).hide();
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= ($(document).height() - $(window).height() - 100)) {
+      $(".card").slice(mincount, maxcount).fadeIn(1000);
+
+      mincount = mincount + 3;
+      maxcount = maxcount + 3;
+    }
+  });</script></html>
